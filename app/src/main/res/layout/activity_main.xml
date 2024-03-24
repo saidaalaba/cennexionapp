@@ -1,0 +1,126 @@
+
+    <!-- activity_main.xml -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconimageview"
+        android:src="@drawable/baseline_login_24"/>
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.Theme.CennexionTest"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Email:" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="-41dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/textViewEmail"
+        android:background="@drawable/edittext_roundedborder"
+        android:backgroundTint="#ADA6B5"
+        android:backgroundTintMode="src_in"
+        android:hint="     Votre adress E-mail..."
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:text="Mot de passe:" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="-87dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/textViewPassword"
+        android:background="@drawable/edittext_roundedborder"
+        android:backgroundTint="#ADA6B5"
+        android:backgroundTintMode="src_atop"
+        android:hint="      Votre mot de passe..."
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxKeepLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Garder ma session active" />
+
+    <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxKeepLoggedIn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Se connecter"
+
+
+
+        />
+
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Mot de passe oublié" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="Vous n'avez pas encore de compte?"
+        android:background="#2196F3"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Inscrivez-vous"
+
+            />
+
+</RelativeLayout>
+
+

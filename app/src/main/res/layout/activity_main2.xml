@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="404dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="Vous serez le plus proche au marché de travail"
+        android:textSize="17sp"
+        android:textStyle="bold"
+
+        android:background="#2196F3"
+        android:backgroundTintMode="src_atop" />
+
+
+    <!-- TextView "Vous êtes" -->
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vous êtes:"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"/>
+
+    <!-- Premier RadioButton -->
+    <RadioButton
+        android:id="@+id/radioButtonOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recruteur cherche des CVS et pose des annonces de travaile"
+        android:layout_toEndOf="@id/textViewMessage"
+        android:layout_alignBaseline="@id/textViewMessage"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Deuxième RadioButton -->
+
+    <!-- TextView for Email -->
+
+    <RadioButton
+        android:id="@+id/radioButtonOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioButtonOption1"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="5dp"
+        android:text="Candidat cherche des annonces et pose des cv" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:layout_below="@id/radioButtonOption2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- EditText for Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewEmail"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_roundedborder"
+        android:backgroundTint="#673AB7"
+        android:backgroundTintMode="src_atop"
+        android:layout_alignBaseline="@id/textViewEmail"
+
+        android:inputType="textEmailAddress"/>
+
+    <!-- TextView for City -->
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ville:"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Spinner for City -->
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewCity"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_roundedborder"
+        android:backgroundTint="#673AB7"
+        android:backgroundTintMode="src_atop"
+        android:layout_alignBaseline="@id/textViewCity"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- TextView for Password -->
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe:"
+        android:layout_below="@id/spinnerCity"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- EditText for Password -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewPassword"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_roundedborder"
+        android:backgroundTint="#673AB7"
+        android:backgroundTintMode="src_atop"
+        android:layout_alignBaseline="@id/textViewPassword"
+        android:inputType="textPassword"/>
+
+    <!-- TextView for Confirm Password -->
+    <TextView
+        android:id="@+id/textViewConfirmPassword"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirmer mot de passe:" />
+
+    <!-- EditText for Confirm Password -->
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewConfirmPassword"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_roundedborder"
+        android:backgroundTint="#673AB7"
+        android:backgroundTintMode="src_atop"
+        android:layout_alignBaseline="@id/textViewConfirmPassword"
+        android:inputType="textPassword"/>
+
+    <!-- TextView for Additional Info -->
+    <TextView
+        android:id="@+id/textViewAdditionalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(au moins 5 caractéres)choisissez un mot de passe que n'est pas facile a devenir "
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity">>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+
+            tools:context=".MainActivity">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="242dp"
+                android:layout_height="103dp"
+                android:layout_above="@id/button3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-38dp"
+                android:layout_marginBottom="-106dp"
+                android:background="#2196F3"
+                android:text="En validant mon inscription ,j'accecpte les condition fénéraizs d'utulusation du site alkhad.ma" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="19dp"
+
+                android:text="créer un compte! " />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

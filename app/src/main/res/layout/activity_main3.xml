@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewAppName1"
+            android:layout_width="404dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="deposer une annonce"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#2196F3"
+            android:backgroundTintMode="src_atop" />
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="368dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="50dp"
+            android:text="Titre(*):" />
+
+        <EditText
+            android:id="@+id/editTextTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
+            android:layout_below="@id/titre"
+            android:hint="Entrez le titre"
+            android:background="@drawable/edittext_roundedborder"
+            android:backgroundTint="#673AB7"
+            android:backgroundTintMode="src_atop"
+            android:layout_alignBaseline="@id/titre"/>
+
+        <TextView
+            android:id="@+id/categorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTitre"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:text="Catégorie(*):"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categorie"
+            android:background="@drawable/edittext_roundedborder"
+            android:backgroundTint="#673AB7"
+            android:layout_marginStart="114dp"
+            android:backgroundTintMode="src_atop"
+            android:layout_alignBaseline="@id/categorie"
+            />
+
+        <TextView
+            android:id="@+id/secteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerCategorie"
+            android:layout_marginTop="16dp"
+            android:text="Secteur:"
+            android:layout_marginStart="40dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSecteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secteur"
+            android:layout_marginStart="113dp"
+            android:background="@drawable/edittext_roundedborder"
+            android:backgroundTint="#673AB7"
+            android:backgroundTintMode="src_atop"
+            android:layout_alignBaseline="@id/secteur"/>
+
+        <TextView
+            android:id="@+id/typeContrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerSecteur"
+            android:layout_marginTop="16dp"
+            android:text="Type de contrat:" />
+
+        <EditText
+            android:id="@+id/editTextTypeContrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeContrat"
+            android:hint="Entrez le type de contrat"
+            android:background="@drawable/edittext_roundedborder"
+            android:backgroundTint="#673AB7"
+            android:layout_marginStart="114dp"
+            android:backgroundTintMode="src_atop"
+            android:layout_alignBaseline="@id/typeContrat"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTypeContrat"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:text="Description:" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="299dp"
+            android:layout_height="125dp"
+            android:layout_below="@id/description"
+            android:layout_alignBaseline="@id/description"
+            android:layout_marginStart="114dp"
+            android:background="@drawable/edittext_roundedborder"
+            android:backgroundTint="#673AB7"
+            android:backgroundTintMode="src_atop"
+            android:hint="Entrez la description"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDescription"
+            android:layout_marginTop="16dp"
+            android:text="Ville:"
+            android:layout_marginStart="40dp"/>
+        <Spinner
+            android:id="@+id/spinnerVille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ville"
+            android:layout_marginStart="113dp"
+            android:background="@drawable/edittext_roundedborder"
+            android:backgroundTint="#673AB7"
+            android:backgroundTintMode="src_atop"
+            android:layout_alignBaseline="@id/ville"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="19dp"
+
+            android:text="suivant" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

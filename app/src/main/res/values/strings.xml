@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">connexion </string>
+
+    <string-array name="cities_array">
+        <item>Agadir</item>
+        <item>settat</item>
+        <item>casablanca</item>
+        <item>berchid</item>
+        <item>rabat</item>
+        <!-- Ajoutez d'autres villes selon vos besoins -->
+    </string-array>
+    <string-array name="categorie">
+        <item>ingenieur</item>
+        <item>techniciene</item>
+        <item>stagaire</item>
+
+
+
+        <!-- Ajoutez d'autres villes selon vos besoins -->
+    </string-array>
+
+    <string-array name="secteur">
+    <item>informatique</item>
+    <item>finance</item>
+    <item>comptabilite</item>
+    </string-array>
+</resources>
